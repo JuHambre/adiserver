@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios de la Batcueva</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="estilo.css" rel="stylesheet" >
+</head>
+<body>
+
+    <div id="overLogin" class="overbox">
+        <form id="formLogin">
+            <p>Login</p> <input id="login" name="login" type="text">
+            <p>Contraseña</p> <input id="contraseñalogin" name="password" type="password">
+            <input type="submit" value="Entrar" onclick="hideLightboxLogin();peticionAJAX();return false;">
+        </form>
+    </div>
+    <div id="fadeLogin" class="fadebox">&nbsp;</div>
+
+    <div id="overRegistro" class="overbox">
+        <form id="formRegistro">
+            <p>Email</p> <input id="loginRegistro" name="login" type="text" onchange="comprobarRegistro()">
+            <span id="loginCorrecto" style="display:none;" class="alert alert-success">Login permitido</span>
+            <span id="loginCogido" style="display:none;" class="alert alert-danger"> Login ya en uso</span>
+            <p>Contraseña</p> <input id="contraseñaRegistro" name="password" type="password">
+            <p>Repite contraseña</p> <input id="rContraseñaRegistro" type="password">
+            <p>Nombre</p> <input id="nombreRegistro" name="nombre" type="text">
+            <p>Apellidos</p> <input id="apellidosRegistro" name="apellidos" type="text">
+            <input type="submit" value="Registro" onclick="hideLightboxRegistro();peticionAJAX2();return false;">
+        </form>
+    </div>
+    <div id="fadeRegistro" class="fadebox">&nbsp;</div>
+
+    <div id="overPeticion" class="overbox">
+        <form id="formPeticion">
+            <p>Titulo</p> <input id="tituloPeticion" name="titulo" type="text">
+            <p>Fecha fin</p> <input id="fechaPeticion" name="fin" type="date">
+            <p>Firmas numero objetivo</p> <input id="firmasPeticion" name="firmasObjetivo" type="text">
+            <p>Texto</p> <textarea id="textoPeticion" name="texto"></textarea>
+            <input type="submit" value="Entrar" onclick="hideLightboxPeticion();crearPeticion();return false;">
+        </form>
+    </div>
+    <div id="fadePeticion" class="fadebox">&nbsp;</div>
+
+    <div id="overEditarUsuario" class="overbox">
+        {{=<% %>=}}
+        <script id="viewEditarUsuario" type="text/template">
+            <form id="formEditarUsuario">
+                <p>Nombre</p> <input id="nombreEditarUsuario" name="nombre" type="text" value="{{nombre}}">
+                <p>Apellidos</p> <input id="apellidosEditarUsuario" name="apellidos" type="text" value="{{apellidos}}">
+                <p>Antigua contraseña</p> <input id="oldEditarUsuario" name="oldPassword" type="password">
+                <p>Nueva contraseña</p> <input id="newEditarUsuario" name="newPassword" type="password">
+                <input class="botonEditarUsuario btn" type="button" value="Editar">
+            </form>
+        </script>
+        <%={{ }}=%>
+    </div>
+    <div id="fadeEditarUsuario" class="fadebox">&nbsp;</div>
+
+    <a href="javascript:showLightboxLogin();">Hacer Login</a>
+    <a href="javascript:showLightboxRegistro();">Registrarse</a>
+    <a href="javascript:showLightboxPeticion();">Crear Peticion</a>
+    <a href="javascript:showLightboxEditarUsuario();">Editar Usuario</a>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h2 id="nombreUsuario" class="brand"></h2>
+            </div>
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <span id="mensaje"></span>
+                    <button id="botonEditarUsuario" type="submit" class="btn btn-success" onclick="hideLightboxPeticion();showLightboxEditarUsuario();return false" style="display:none;">Editar Usuario</button>
+                    <button id="botonPeticion" type="submit" class="btn btn-success" onclick="showLightboxPeticion();return false" style="display:none;">Crear Peticion</button>
+                    <button id="botonLogin" type="submit" class="btn btn-success" onclick="hideLightboxRegistro();showLightboxLogin();return false">Login</button>
+                    <button id="botonRegistro" type="submit" class="btn btn-success" onclick="hideLightboxLogin();showLightboxRegistro();return false">Registro</button>
+                </form>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <img width="200" alt="Logo" src="img/logos/batman.jpg">
+            <h1>Batcueva</h1>
+            <p>Intentando cambiar el mundo</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-lg-4">
+                {{#usuario}}
+                    <p> <img width=200 alt="Imagen del usuario" src="img/perfiles/{{login}}.jpg"> </p>
+                    <p> {{nombre}} {{apellidos}} </p>
+                {{/usuario}}
+            </div>
+
+            <div class="col-lg-5">
+                <p id="imagen-peticion"> <img width="200" alt="Peticion" src="img/logos/spidermanVSbatman.jpeg"> </p>
+                <h2> Acciones recientes </h2>
+                <h3> Creo la petición: Vencer a Spiderman </h3>
+                <p> 07/01/2010 </p>
+            </div>
+        </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Industries Wayne Inc.</p>
+    </footer>
+    </div> <!-- /container -->
+
+    <script src="funciones.js"></script>
+    <!-- requisito imprescindible para backbone -->
+    <script src="lib/underscore-min.js"> </script>
+    <!-- el propio backbone -->
+    <script src="lib/backbone-min.js"> </script>
+    <!-- Mustache -->
+    <script src="lib/mustache.js"></script>
+    <!-- Modelos -->
+    <script src="backbone/modelos/usuario.js"> </script>
+    <!-- Vistas -->
+    <script src="backbone/vistas/usuario.js"> </script>
+
+    <script>
+        if(localStorage.login){
+            var usuario = new Usuario();
+            var usuarioView = new UsuarioView({model:usuario});
+            usuario.fetch();
+            usuarioView.render();
+        }
+    </script>
+</body>
+</html>
