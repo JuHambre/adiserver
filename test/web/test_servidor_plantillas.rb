@@ -22,13 +22,20 @@ class ServidorPlantillasTest < Test::Unit::TestCase
     get '/index'
     assert last_response.ok?
     assert last_response.body.include?('Batcueva')
-    assert last_response.body.include?('peticion 1')
+    assert last_response.body.include?('Que se proteja al berberecho salvaje')
   end
 
   def test_peticiones
     get '/peticion?id=1'
     assert last_response.ok?
-    assert last_response.body.include?('peticion 1')
+    assert last_response.body.include?('Que se proteja al berberecho salvaje')
     assert last_response.body.include?('Firmas recientes')
+  end
+
+  def test_usuarios
+    get '/usuario?login=pepe@ua.es'
+    assert last_response.ok?
+    assert last_response.body.include?('Pepe')
+    assert last_response.body.include?('Vencer a Spiderman')
   end
 end
