@@ -4,6 +4,7 @@ require_relative '../dominio/usuario'
 def init_datamapper
   DataMapper::Logger.new($stdout, :debug)
   #usaremos sqlite en vez de mysql para simplificar
+=begin
   DataMapper::setup(:default,
                     :adapter => 'sqlite3',
                     :host => 'localhost',
@@ -11,7 +12,9 @@ def init_datamapper
                     :password => '',
                     :database => 'muevete_bd.sqlite'
   )
-
+=end
+  this_dir = File.dirname(File.absolute_path(File.new(__FILE__)))
+  DataMapper::setup(:default,"sqlite://#{this_dir}/../web/muevete_bd.sqlite")
   #reglas de inflexión para el castellano tomadas de https://gist.github.com/maxidr/838188
   #sirven para generar el plural de un modelo partiendo del singular y viceversa (peticion -> peticiones)
   DataMapper::Inflector.inflections do |inflect|
