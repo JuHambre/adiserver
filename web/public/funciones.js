@@ -127,7 +127,7 @@ function peticionAJAX(){
         var formLogin=$('#formLogin');
 
         $.ajax( {
-            url:'login',
+            url:'auth/login',
             method: 'POST',
             data: formLogin.serialize()
         })

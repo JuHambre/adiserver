@@ -26,14 +26,14 @@ class ServidorPlantillasTest < Test::Unit::TestCase
   end
 
   def test_peticiones
-    get '/peticion?id=1'
+    get '/peticion', :id => 1
     assert last_response.ok?
     assert last_response.body.include?('Que se proteja al berberecho salvaje')
     assert last_response.body.include?('Firmas recientes')
   end
 
   def test_usuarios
-    get '/usuario?login=pepe@ua.es'
+    get '/usuario', :login => 'pepe@ua.es'
     assert last_response.ok?
     assert last_response.body.include?('Pepe')
     assert last_response.body.include?('Vencer a Spiderman')
