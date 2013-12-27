@@ -24,4 +24,11 @@ class ServidorPlantillasTest < Test::Unit::TestCase
     assert last_response.body.include?('Batcueva')
     assert last_response.body.include?('peticion 1')
   end
+
+  def test_peticiones
+    get '/peticion?id=1'
+    assert last_response.ok?
+    assert last_response.body.include?('peticion 1')
+    assert last_response.body.include?('Firmas recientes')
+  end
 end

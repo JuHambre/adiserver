@@ -6,6 +6,8 @@ require_relative '../datos/init_datamapper'
 require_relative '../negocio/peticion_service'
 
 class ServidorPlantillas < Sinatra::Base
+  register Sinatra::Reloader
+
   get '/' do
     'Hola Sinatra'
   end
@@ -13,6 +15,11 @@ class ServidorPlantillas < Sinatra::Base
   get '/index' do
     @destacadas = PeticionService.new.listar_destacadas
     mustache :index
+  end
+
+  get '/peticion' do
+    @peticion = PeticionService.new.listar_peticion(params[:id])
+    mustache :peticion
   end
 
   configure do
