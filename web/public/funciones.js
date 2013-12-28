@@ -113,7 +113,7 @@ function datosUsuario(login){
 //Funcion para hacer logout
 function logout(){
     localStorage.removeItem("login");
-    $.get("logout");
+    $.get("auth/logout");
 
 }
 

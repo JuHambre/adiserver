@@ -13,6 +13,7 @@ class ServidorAutentificacion < Sinatra::Base
       @login = UsuarioService.new.login(params[:login], params[:password])
 
       if(@login)
+        session[:login] = params[:login]
         status 200
       else
         status 403
@@ -22,6 +23,8 @@ class ServidorAutentificacion < Sinatra::Base
     end
   end
 
-
+  get '/logout' do
+    session.clear
+  end
 
 end

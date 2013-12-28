@@ -28,4 +28,5 @@ class ServidorAutentificacionTest < Test::Unit::TestCase
     post '/login', :login => 'falso@ua.es', :password => 'falso'
     assert_equal last_response.status, 403
   end
+
 end
