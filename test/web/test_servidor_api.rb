@@ -19,4 +19,14 @@ class ServidorAPITest < Test::Unit::TestCase
     assert last_response.ok?
     assert last_response.body.include?('Pepe')
   end
+
+  def test_usuarios_registrados
+    get '/loginDisponible/pepe@ua.es'
+    assert last_response.body.include?('no')
+  end
+
+  def test_usuarios_no_registrados
+    get '/loginDisponible/prueba@prueba.es'
+    assert last_response.body.include?('OK')
+  end
 end

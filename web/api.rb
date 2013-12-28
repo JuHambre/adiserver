@@ -14,5 +14,13 @@ class ServidorAPI < Sinatra::Base
     @usuario.to_json
   end
 
+  get '/loginDisponible/:login' do
+    @usuario = UsuarioService.new.listar_usuario(params[:login])
+    if(@usuario)
+      "no"
+    else
+      "OK"
+    end
+  end
 
 end

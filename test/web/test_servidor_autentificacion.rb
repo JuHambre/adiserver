@@ -17,6 +17,7 @@ class ServidorAutentificacionTest < Test::Unit::TestCase
   def test_login
     post '/login', :login => 'pepe@ua.es', :password => 'pepe'
     assert last_response.ok?
+    assert_equal last_request.env['rack.session'][:login], 'pepe@ua.es'
   end
 
   def test_login_vacio

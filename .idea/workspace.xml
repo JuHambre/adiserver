@@ -15,12 +15,12 @@
     <file path="/init_datamapper.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388148545646" ignored="false" />
     <file path="/test_servidor_plantillas.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388166276231" ignored="false" />
     <file path="/autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388249993181" ignored="false" />
-    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388251717500" ignored="false" />
+    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253738699" ignored="false" />
     <file path="/UsuarioDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388168470423" ignored="false" />
     <file path="/usuario_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388247802737" ignored="false" />
-    <file path="/test_servidor_autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388251914227" ignored="false" />
+    <file path="/test_servidor_autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253563613" ignored="false" />
     <file path="/funciones.js" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388251539175" ignored="false" />
-    <file path="/test_servidor_api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388252676629" ignored="false" />
+    <file path="/test_servidor_api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253936030" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_servidor_autentificacion.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/web/test_servidor_autentificacion.rb">
+      <file leaf-file-name="api.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="16" column="30" selection-start="400" selection-end="423" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,34 +52,7 @@
       <file leaf-file-name="test_servidor_api.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/web/test_servidor_api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.17706576">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autentificacion.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/autentificacion.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="138" selection-end="183" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/api.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_servidor_plantillas.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/web/test_servidor_plantillas.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="490" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="29" column="42" selection-start="655" selection-end="655" vertical-scroll-proportion="0.7335582">
               <folding />
             </state>
           </provider>
@@ -517,23 +490,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/web/test_servidor_plantillas.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="490" selection-end="536" vertical-scroll-proportion="0.5817875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/servidor_plantillas.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="559" selection-end="671" vertical-scroll-proportion="0.5699831">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/web/test_servidor_plantillas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="490" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -547,14 +513,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/web/test_servidor_autentificacion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+        <state line="19" column="30" selection-start="450" selection-end="450" vertical-scroll-proportion="0.4806071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/api.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="400" selection-end="423" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/web/test_servidor_api.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.17706576">
+        <state line="29" column="42" selection-start="655" selection-end="655" vertical-scroll-proportion="0.7335582">
           <folding />
         </state>
       </provider>
