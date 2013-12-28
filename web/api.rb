@@ -4,6 +4,7 @@ require 'sinatra/reloader'
 require 'sinatra/mustache'
 require_relative '../datos/init_datamapper'
 require_relative '../negocio/usuario_service'
+require 'json'
 
 class ServidorAPI < Sinatra::Base
   register Sinatra::Reloader
@@ -15,12 +16,34 @@ class ServidorAPI < Sinatra::Base
   end
 
   get '/loginDisponible/:login' do
-    @usuario = UsuarioService.new.listar_usuario(params[:login])
-    if(@usuario)
-      "no"
-    else
+    disponible = login_disponible(params[:login])
+    if(disponible)
       "OK"
+    else
+      "no"
     end
+  end
+
+  post '/usuarios' do
+    usuario = JSON.parse(request.body)
+    if(login_disponible(usuario[:login]))
+      @usuario = UsuarioService.new.registrar_usuario(usuario)
+      if(@usuario)
+        content_type :json
+        @usuario.to_json
+      else
+        status 400
+      end
+    else
+      status 400
+    end
+  end
+
+private
+
+  def login_disponible(login)
+     usuario = UsuarioService.new.listar_usuario(login)
+     usuario.nil?
   end
 
 end

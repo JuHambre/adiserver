@@ -13,4 +13,8 @@ class UsuarioService
     end
   end
 
+  def registrar_usuario(usuario)
+    UsuarioDAO.new.registrar_usuario(usuario)
+  end
+
 end
