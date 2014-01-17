@@ -27,23 +27,24 @@ class ServidorAPI < Sinatra::Base
 
   post '/usuarios' do
     usuario = JSON.parse(request.body.read)
-    if(login_disponible(usuario[:login]))
+    if(login_disponible(usuario["login"]))
       @usuario = UsuarioService.new.registrar_usuario(usuario)
-      if(@usuario)
-        content_type :json
-        @usuario.to_json
-      else
-        status 400
-      end
     else
       status 400
     end
   end
 
   post '/peticiones' do
-    peticion = JSON.parse(request.body)
-    @peticion = PeticionService.new.registrar_peticion(peticion)
-    status 200
+    peticion = JSON.parse(request.body.read)
+    if(session[:login])
+      if(peticion["titulo"] != "" && peticion["texto"] != "" && peticion["firmasObjetivo"] != "" && peticion["fin"] != "")
+        @peticion = PeticionService.new.registrar_peticion(peticion)
+      else
+        status 400
+      end
+    else
+      status 403
+    end
   end
 
 private

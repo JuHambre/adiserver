@@ -10,10 +10,6 @@ class UsuarioDAO
   end
 
   def registrar_usuario(usuario)
-    if Usuario.create(usuario)
-      listar_usuario(usuario[:login])
-    else
-      false
-    end
+    Usuario.create(usuario)
   end
 end

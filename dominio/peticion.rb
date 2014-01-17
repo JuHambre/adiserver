@@ -7,11 +7,11 @@ class Peticion
   property :titulo, String, :required=>true
   property :texto, Text, :required=>true
   property :firmasObjetivo, Integer, :required=>true
-  property :firmasConseguidas, Integer, :required=>true
-  property :abierta, Boolean, :required=> true
-  property :conseguida, Boolean, :required=> true
-  property :destacada, Boolean, :required=> true
-  property :inicio, Date, :required => true
+  property :firmasConseguidas, Integer, :required=>true, :default => 0
+  property :abierta, Boolean, :required=> true, :default => false
+  property :conseguida, Boolean, :required=> true, :default => false
+  property :destacada, Boolean, :required=> true, :default => false
+  property :inicio, Date
   property :fin, Date, :required => true
 
   belongs_to :usuario
