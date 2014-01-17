@@ -8,4 +8,8 @@ class PeticionDAO
   def listar_peticion(id)
     Peticion.get(id)
   end
+
+  def registrar_peticion(peticion)
+    Peticion.create(peticion)
+  end
 end

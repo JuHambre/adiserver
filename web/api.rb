@@ -4,6 +4,7 @@ require 'sinatra/reloader'
 require 'sinatra/mustache'
 require_relative '../datos/init_datamapper'
 require_relative '../negocio/usuario_service'
+require_relative '../negocio/peticion_service'
 require 'json'
 
 class ServidorAPI < Sinatra::Base
@@ -25,7 +26,7 @@ class ServidorAPI < Sinatra::Base
   end
 
   post '/usuarios' do
-    usuario = JSON.parse(request.body)
+    usuario = JSON.parse(request.body.read)
     if(login_disponible(usuario[:login]))
       @usuario = UsuarioService.new.registrar_usuario(usuario)
       if(@usuario)
@@ -37,6 +38,12 @@ class ServidorAPI < Sinatra::Base
     else
       status 400
     end
+  end
+
+  post '/peticiones' do
+    peticion = JSON.parse(request.body)
+    @peticion = PeticionService.new.registrar_peticion(peticion)
+    status 200
   end
 
 private
