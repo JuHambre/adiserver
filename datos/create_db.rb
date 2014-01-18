@@ -2,12 +2,17 @@
 require 'data_mapper'
 require 'date'
 
+require_relative "../dominio/actualizacion"
+require_relative "../dominio/firma"
 require_relative "../dominio/peticion"
 require_relative "../dominio/usuario"
+
 require_relative "init_datamapper"
 
 def init_data
 
+  Actualizacion.destroy
+  Firma.destroy
   Peticion.destroy
   Usuario.destroy
 

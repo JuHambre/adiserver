@@ -1,3 +1,5 @@
+require_relative '../dominio/actualizacion'
+require_relative '../dominio/firma'
 require_relative '../dominio/peticion'
 require_relative '../dominio/usuario'
 

@@ -47,6 +47,15 @@ class ServidorAPI < Sinatra::Base
     end
   end
 
+  post '/peticiones/:id/firmas' do
+    firma = JSON.parse(request.body.read)
+    @firma = FirmaService.new.firma(firma)
+  end
+
+  get 'peticiones/:id/actualizaciones' do
+      @actualizaciones = ActualizacionService.new.listar_actualizaciones
+  end
+
 private
 
   def login_disponible(login)
