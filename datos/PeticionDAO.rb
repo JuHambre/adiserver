@@ -1,4 +1,5 @@
 require_relative '../dominio/peticion'
+require_relative '../dominio/usuario'
 
 class PeticionDAO
   def listar_destacadas()
@@ -9,7 +10,8 @@ class PeticionDAO
     Peticion.get(id)
   end
 
-  def registrar_peticion(peticion)
-    Peticion.create(peticion)
+  def registrar_peticion(peticion,login)
+    u1 = Usuario.get(login)
+    u1.peticiones.create(peticion)
   end
 end

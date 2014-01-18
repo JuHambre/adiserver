@@ -38,7 +38,7 @@ class ServidorAPI < Sinatra::Base
     peticion = JSON.parse(request.body.read)
     if(session[:login])
       if(peticion["titulo"] != "" && peticion["texto"] != "" && peticion["firmasObjetivo"] != "" && peticion["fin"] != "")
-        @peticion = PeticionService.new.registrar_peticion(peticion)
+        @peticion = PeticionService.new.registrar_peticion(peticion,session[:login])
       else
         status 400
       end
@@ -53,7 +53,7 @@ class ServidorAPI < Sinatra::Base
   end
 
   get 'peticiones/:id/actualizaciones' do
-      @actualizaciones = ActualizacionService.new.listar_actualizaciones
+    @actualizaciones = ActualizacionService.new.listar_actualizaciones
   end
 
 private

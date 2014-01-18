@@ -9,7 +9,7 @@ class PeticionService
     PeticionDAO.new.listar_peticion(id)
   end
 
-  def registrar_peticion(peticion)
-    PeticionDAO.new.registrar_peticion(peticion)
+  def registrar_peticion(peticion,login)
+    PeticionDAO.new.registrar_peticion(peticion,login)
   end
 end
