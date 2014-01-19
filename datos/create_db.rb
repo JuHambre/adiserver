@@ -58,11 +58,6 @@ END
                        :inicio => Date.today-10,
                        :fin => Date.today+60)
 
-  ##Peticion.get(1).actualizaciones.create(:contenido => texto3,
-  ##                                       :fecha => 'Hoy')
-  ##Peticion.get(2).actualizaciones.create(:contenido => texto4,
-  ##                                       :fecha => 'Hoy')
-
 end
 
 init_datamapper()

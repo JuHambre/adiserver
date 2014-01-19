@@ -65,6 +65,15 @@ class ServidorAPI < Sinatra::Base
     @actualizaciones = ActualizacionService.new.crear_actualizaciones(params[:id], actualizaciones)
   end
 
+  put '/peticiones/:id/actualizaciones/:idact' do
+    actualizaciones = JSON.parse(request.body.read)
+    @actualizaciones = ActualizacionService.new.editar_actualizaciones(params[:id], params[:idact], actualizaciones)
+  end
+
+  delete '/peticiones/:id/actualizaciones/:idact' do
+    @actualizaciones = ActualizacionService.new.borrar_actualizaciones(params[:id], params[:idact])
+  end
+
 private
 
   def login_disponible(login)

@@ -12,4 +12,17 @@ class ActualizacionDAO
     a1 = Peticion.get(id)
     a1.actualizaciones.create(actualizaciones)
   end
+
+  def editar_actualizaciones(id, idact, actualizaciones)
+    a = Peticion.get(id)
+    a1 = a.actualizaciones.get(idact)
+    a1.update(:contenido => actualizaciones["contenido"])
+  end
+
+  def borrar_actualizaciones(id, idact)
+    a = Peticion.get(id)
+    a1 = a.actualizaciones.get(idact)
+    a1.destroy
+  end
+
 end

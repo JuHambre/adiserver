@@ -15,7 +15,7 @@
     <file path="/init_datamapper.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390042204369" ignored="false" />
     <file path="/test_servidor_plantillas.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388166276231" ignored="false" />
     <file path="/autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388249993181" ignored="false" />
-    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390089840976" ignored="false" />
+    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390099616635" ignored="false" />
     <file path="/UsuarioDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1389974377575" ignored="false" />
     <file path="/usuario_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1389976625081" ignored="false" />
     <file path="/test_servidor_autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253563613" ignored="false" />
@@ -26,10 +26,11 @@
     <file path="/FirmaDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390068826517" ignored="false" />
     <file path="/firma_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390068790166" ignored="false" />
     <file path="/actualizacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390090064762" ignored="false" />
-    <file path="/actualizacion_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390072645949" ignored="false" />
-    <file path="/ActualizacionDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390072656385" ignored="false" />
+    <file path="/actualizacion_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390099681080" ignored="false" />
+    <file path="/ActualizacionDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390100057048" ignored="false" />
     <file path="/peticion.html" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390088986567" ignored="false" />
     <file path="/colactualizacion.js" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390087770600" ignored="false" />
+    <file path="/a.dummy" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390096444271" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,34 +53,25 @@
       <file leaf-file-name="api.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
+            <state line="73" column="99" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actualizacion.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dominio/actualizacion.rb">
+      <file leaf-file-name="actualizacion_service.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/negocio/actualizacion_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="65" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
+            <state line="17" column="57" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colactualizacion.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js">
+      <file leaf-file-name="ActualizacionDAO.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/datos/ActualizacionDAO.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="peticion.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/peticion.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="34" selection-start="10438" selection-end="10438" vertical-scroll-proportion="-69.416664">
+            <state line="24" column="15" selection-start="634" selection-end="634" vertical-scroll-proportion="0.6070826">
               <folding />
             </state>
           </provider>
@@ -104,13 +96,13 @@
         <option value="$PROJECT_DIR$/negocio/firma_service.rb" />
         <option value="$PROJECT_DIR$/datos/FirmaDAO.rb" />
         <option value="$PROJECT_DIR$/web/public/backbone/modelos/firma.js" />
+        <option value="$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js" />
+        <option value="$PROJECT_DIR$/web/views/peticion.html" />
+        <option value="$PROJECT_DIR$/dominio/actualizacion.rb" />
+        <option value="$PROJECT_DIR$/web/api.rb" />
         <option value="$PROJECT_DIR$/negocio/actualizacion_service.rb" />
         <option value="$PROJECT_DIR$/datos/ActualizacionDAO.rb" />
         <option value="$PROJECT_DIR$/datos/create_db.rb" />
-        <option value="$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js" />
-        <option value="$PROJECT_DIR$/web/views/peticion.html" />
-        <option value="$PROJECT_DIR$/web/api.rb" />
-        <option value="$PROJECT_DIR$/dominio/actualizacion.rb" />
       </list>
     </option>
   </component>
@@ -573,27 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/negocio/actualizacion_service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="66" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datos/ActualizacionDAO.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3035413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datos/create_db.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="4" selection-start="1915" selection-end="1915" vertical-scroll-proportion="1.1517707">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/firma.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -615,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/actualizacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dominio/peticion.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="8" selection-start="713" selection-end="713" vertical-scroll-proportion="0.5564924">
@@ -629,30 +593,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/peticion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="34" selection-start="10438" selection-end="10438" vertical-scroll-proportion="-69.416664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+        <state line="20" column="61" selection-start="774" selection-end="774" vertical-scroll-proportion="0.5059022">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/api.rb">
+    <entry file="file://$PROJECT_DIR$/web/views/peticion.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
+        <state line="224" column="34" selection-start="10438" selection-end="10438" vertical-scroll-proportion="2.996403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/actualizacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.46551725">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dominio/actualizacion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
+        <state line="7" column="44" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/api.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="99" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/negocio/actualizacion_service.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="57" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos/create_db.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="45" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.6964587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datos/ActualizacionDAO.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="634" selection-end="634" vertical-scroll-proportion="0.6070826">
           <folding />
         </state>
       </provider>
