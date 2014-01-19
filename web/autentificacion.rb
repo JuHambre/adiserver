@@ -8,6 +8,7 @@ require_relative '../negocio/usuario_service'
 class ServidorAutentificacion < Sinatra::Base
   register Sinatra::Reloader
 
+  ## Hacer login
   post '/login' do
     begin
       @login = UsuarioService.new.login(params[:login], params[:password])
@@ -23,6 +24,7 @@ class ServidorAutentificacion < Sinatra::Base
     end
   end
 
+  ## Hacer logout
   get '/logout' do
     session.clear
   end
