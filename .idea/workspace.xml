@@ -9,13 +9,13 @@
     <file path="/PeticionDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390067738236" ignored="false" />
     <file path="/peticion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390065105848" ignored="false" />
     <file path="/usuario.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390064692959" ignored="false" />
-    <file path="/create_db.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390065782604" ignored="false" />
+    <file path="/create_db.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390087408784" ignored="false" />
     <file path="/peticion_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390067722129" ignored="false" />
     <file path="/index.html" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1386069117812" ignored="false" />
     <file path="/init_datamapper.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390042204369" ignored="false" />
     <file path="/test_servidor_plantillas.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388166276231" ignored="false" />
     <file path="/autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388249993181" ignored="false" />
-    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390067696768" ignored="false" />
+    <file path="/api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390089840976" ignored="false" />
     <file path="/UsuarioDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1389974377575" ignored="false" />
     <file path="/usuario_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1389976625081" ignored="false" />
     <file path="/test_servidor_autentificacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253563613" ignored="false" />
@@ -23,11 +23,13 @@
     <file path="/test_servidor_api.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1388253936030" ignored="false" />
     <file path="/Firma.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390037500555" ignored="false" />
     <file path="/firma.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390037921412" ignored="false" />
-    <file path="/FirmaDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390055071313" ignored="false" />
-    <file path="/firma_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390055046437" ignored="false" />
-    <file path="/actualizacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390042092392" ignored="false" />
-    <file path="/actualizacion_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390042508634" ignored="false" />
-    <file path="/ActualizacionDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390046277075" ignored="false" />
+    <file path="/FirmaDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390068826517" ignored="false" />
+    <file path="/firma_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390068790166" ignored="false" />
+    <file path="/actualizacion.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390090064762" ignored="false" />
+    <file path="/actualizacion_service.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390072645949" ignored="false" />
+    <file path="/ActualizacionDAO.rb" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390072656385" ignored="false" />
+    <file path="/peticion.html" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390088986567" ignored="false" />
+    <file path="/colactualizacion.js" changelist="c81fa3de-d7c2-490b-810f-b06e65e63bf4" time="1390087770600" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +52,34 @@
       <file leaf-file-name="api.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/api.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="82" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+            <state line="59" column="28" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="peticion_service.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/negocio/peticion_service.rb">
+      <file leaf-file-name="actualizacion.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dominio/actualizacion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="53" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+            <state line="7" column="65" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PeticionDAO.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/datos/PeticionDAO.rb">
+      <file leaf-file-name="colactualizacion.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.35413152">
+            <state line="20" column="61" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="peticion.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/peticion.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="224" column="34" selection-start="10438" selection-end="10438" vertical-scroll-proportion="-69.416664">
               <folding />
             </state>
           </provider>
@@ -84,22 +95,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/negocio/usuario_service.rb" />
-        <option value="$PROJECT_DIR$/datos/UsuarioDAO.rb" />
-        <option value="$PROJECT_DIR$/dominio/Firma.rb" />
         <option value="$PROJECT_DIR$/dominio/firma.rb" />
-        <option value="$PROJECT_DIR$/dominio/actualizacion.rb" />
         <option value="$PROJECT_DIR$/datos/init_datamapper.rb" />
-        <option value="$PROJECT_DIR$/negocio/actualizacion_service.rb" />
-        <option value="$PROJECT_DIR$/datos/ActualizacionDAO.rb" />
-        <option value="$PROJECT_DIR$/negocio/firma_service.rb" />
-        <option value="$PROJECT_DIR$/datos/FirmaDAO.rb" />
         <option value="$PROJECT_DIR$/dominio/usuario.rb" />
         <option value="$PROJECT_DIR$/dominio/peticion.rb" />
-        <option value="$PROJECT_DIR$/datos/create_db.rb" />
-        <option value="$PROJECT_DIR$/web/api.rb" />
         <option value="$PROJECT_DIR$/negocio/peticion_service.rb" />
         <option value="$PROJECT_DIR$/datos/PeticionDAO.rb" />
+        <option value="$PROJECT_DIR$/negocio/firma_service.rb" />
+        <option value="$PROJECT_DIR$/datos/FirmaDAO.rb" />
+        <option value="$PROJECT_DIR$/web/public/backbone/modelos/firma.js" />
+        <option value="$PROJECT_DIR$/negocio/actualizacion_service.rb" />
+        <option value="$PROJECT_DIR$/datos/ActualizacionDAO.rb" />
+        <option value="$PROJECT_DIR$/datos/create_db.rb" />
+        <option value="$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js" />
+        <option value="$PROJECT_DIR$/web/views/peticion.html" />
+        <option value="$PROJECT_DIR$/web/api.rb" />
+        <option value="$PROJECT_DIR$/dominio/actualizacion.rb" />
       </list>
     </option>
   </component>
@@ -170,7 +181,125 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vistas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modelos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muevete_ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colecciones" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,58 +545,79 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/actualizacion.js">
+    <entry file="file://$PROJECT_DIR$/dominio/firma.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js">
+    <entry file="file://$PROJECT_DIR$/dominio/usuario.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/servidor_plantillas.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="17" selection-start="2437" selection-end="2440" vertical-scroll-proportion="0.6697936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/negocio/actualizacion_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="153" selection-end="153" vertical-scroll-proportion="0.10118044">
+        <state line="9" column="66" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datos/ActualizacionDAO.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10118044">
+        <state line="12" column="46" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3035413">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dominio/firma.rb">
+    <entry file="file://$PROJECT_DIR$/datos/create_db.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.35413152">
+        <state line="60" column="4" selection-start="1915" selection-end="1915" vertical-scroll-proportion="1.1517707">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dominio/actualizacion.rb">
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/firma.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="254" selection-end="254" vertical-scroll-proportion="0.3035413">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datos/FirmaDAO.rb">
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/modelos/actualizacion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/negocio/firma_service.rb">
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/colecciones/actualizacion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="141" selection-end="141" vertical-scroll-proportion="0.12647554">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/actualizacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -479,51 +629,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dominio/usuario.rb">
+    <entry file="file://$PROJECT_DIR$/web/views/peticion.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+        <state line="224" column="34" selection-start="10438" selection-end="10438" vertical-scroll-proportion="-69.416664">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datos/init_datamapper.rb">
+    <entry file="file://$PROJECT_DIR$/web/public/backbone/vistas/colactualizacion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/servidor_plantillas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="673" selection-end="796" vertical-scroll-proportion="0.7588533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datos/create_db.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="53" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0">
+        <state line="20" column="61" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/api.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="82" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+        <state line="59" column="28" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/negocio/peticion_service.rb">
+    <entry file="file://$PROJECT_DIR$/dominio/actualizacion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datos/PeticionDAO.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.35413152">
+        <state line="7" column="65" selection-start="169" selection-end="169" vertical-scroll-proportion="0.17706576">
           <folding />
         </state>
       </provider>

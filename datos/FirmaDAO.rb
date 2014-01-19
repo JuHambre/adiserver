@@ -1,8 +1,9 @@
 require_relative '../dominio/firma'
+require_relative '../dominio/peticion'
 
 class FirmaDAO
   def firma(firma,id)
-    firma[:peticion] = id
-    Firma.create(firma)
+    p1 = Peticion.get(id)
+    p1.firmas.create(firma)
   end
 end

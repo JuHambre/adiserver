@@ -222,6 +222,7 @@
         var colactualizacion = new Actualizaciones()
         var colactualizacionview = new ColActualizacionView({collection:colactualizacion})
         colactualizacion.fetch();
+        colactualizacionview.render();
 
         if(localStorage.login){
             var usuario = new Usuario();

@@ -5,6 +5,8 @@ require 'sinatra/mustache'
 require_relative '../datos/init_datamapper'
 require_relative '../negocio/usuario_service'
 require_relative '../negocio/peticion_service'
+require_relative '../negocio/firma_service'
+require_relative '../negocio/actualizacion_service'
 require 'json'
 
 class ServidorAPI < Sinatra::Base
@@ -49,11 +51,18 @@ class ServidorAPI < Sinatra::Base
 
   post '/peticiones/:id/firmas' do
     firma = JSON.parse(request.body.read)
-    @firma = FirmaService.new.firma(firma)
+    @firma = FirmaService.new.firma(firma,params[:id])
   end
 
-  get 'peticiones/:id/actualizaciones' do
-    @actualizaciones = ActualizacionService.new.listar_actualizaciones
+  get '/peticiones/:id/actualizaciones' do
+    @actualizaciones = ActualizacionService.new.listar_actualizaciones(params[:id])
+    content_type :json
+    @actualizaciones.to_json
+  end
+
+  post '/peticiones/:id/actualizaciones' do
+    actualizaciones = JSON.parse(request.body.read)
+    @actualizaciones = ActualizacionService.new.crear_actualizaciones(params[:id], actualizaciones)
   end
 
 private

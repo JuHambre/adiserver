@@ -27,6 +27,14 @@ texto2 = <<END
 Estamos hartos de tantas prácticas de ADI, por lo que proponemos un sobresaliente general o en su defecto aprobado
 END
 
+texto3 = <<END
+Prueba 1
+END
+
+texto4 = <<END
+Prueba 2
+END
+
 
   u1 = Usuario.create(:login => 'adi@ua.es', :password => 'adi', :nombre => 'Alfonso', :apellidos => 'David Iradier')
   u1.peticiones.create({:titulo =>'Que se proteja al berberecho salvaje',
@@ -49,6 +57,12 @@ END
                        :destacada => true,
                        :inicio => Date.today-10,
                        :fin => Date.today+60)
+
+  ##Peticion.get(1).actualizaciones.create(:contenido => texto3,
+  ##                                       :fecha => 'Hoy')
+  ##Peticion.get(2).actualizaciones.create(:contenido => texto4,
+  ##                                       :fecha => 'Hoy')
+
 end
 
 init_datamapper()

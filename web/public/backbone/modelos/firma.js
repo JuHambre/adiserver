@@ -7,5 +7,5 @@
  */
 
 var Firma = Backbone.Model.extend({
-    url:'api/peticiones/'+id_peticion+'/firmas/'
+    url:'api/peticiones/'+id_peticion+'/firmas'
 })
