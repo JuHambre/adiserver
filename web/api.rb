@@ -66,8 +66,7 @@ class ServidorAPI < Sinatra::Base
     end
   end
 
-  ## Crear actualizaciones
-  ## He permitido que aunque no estes logueado puedas tanto crear, modificar, y borrar peticiones
+  ## Ver ultimas 3 actualizaciones actualizaciones
   get '/peticiones/:id/actualizaciones' do
     @actualizaciones = ActualizacionService.new.listar_actualizaciones(params[:id])
     content_type :json
@@ -75,6 +74,7 @@ class ServidorAPI < Sinatra::Base
   end
 
   ## Crear actualizaciones
+  ## He permitido que aunque no estes logueado puedas tanto crear, modificar, y borrar peticiones
   post '/peticiones/:id/actualizaciones' do
     actualizaciones = JSON.parse(request.body.read)
     @actualizaciones = ActualizacionService.new.crear_actualizaciones(params[:id], actualizaciones)
